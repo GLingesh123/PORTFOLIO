@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golla Lingesh - Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Resume Container Styles */
+        .resume-container {
+            position: relative;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #888;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 800px; /* Set a maximum width */
+            margin: 5% auto; /* Center the container */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        /* Close button */
+        .close {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            color: #aaa;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover, .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Table Styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <span class="close">&times;</span> <!-- Close button -->
+        <h1>Golla Lingesh</h1>
+
+        <section id="objective">
+            <h2>Objective</h2>
+            <p>Computer Science student with a 9.3 CGPA and a strong foundation in Java programming, web development, and problem-solving. Seeking an IT internship to leverage technical skills, contribute to innovative software solutions, and gain hands-on industry experience.</p>
+        </section>
+
+        <section id="education">
+            <h2>Academic Details</h2>
+            <table>
+                <tr>
+                    <th>Degree</th>
+                    <th>Institution</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>Bachelor of Technology (B. Tech)</td>
+                    <td>G. Pullaiah College of Engineering and Technology, Kurnool</td>
+                    <td>CGPA: 9.3</td>
+                </tr>
+                <tr>
+                    <td>Intermediate</td>
+                    <td>Narayana Junior College, Kurnool</td>
+                    <td>Percentage: 95.4%</td>
+                </tr>
+                <tr>
+                    <td>Secondary School Certificate (SSC)</td>
+                    <td>Adarsha Vidya Mandir High School, Kurnool</td>
+                    <td>Percentage: 98.6%</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <table>
+                <tr>
+                    <th>Category</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>Programming</td>
+                    <td>Java, Python</td>
+                </tr>
+                <tr>
+                    <td>Web Development</td>
+                    <td>HTML, CSS, JavaScript</td>
+                </tr>
+                <tr>
+                    <td>Frameworks & Tools</td>
+                    <td>Visual Studio Code, Eclipse</td>
+                </tr>
+                <tr>
+                    <td>Operating Systems</td>
+                    <td>Windows, Linux</td>
+                </tr>
+                <tr>
+                    <td>Version Control</td>
+                    <td>Git, GitHub</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <table>
+                <tr>
+                    <th>Project</th>
+                    <th>Technologies</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Dairy Farm Website</td>
+                    <td>HTML, CSS, JavaScript</td>
+                    <td>Developed a responsive and user-friendly interface for a dairy farm.</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="achievements">
+            <h2>Achievements</h2>
+            <table>
+                
+                <tr>
+                    <td>Consistently maintained a CGPA of 9.3</td>
+                </tr>
+                <tr>
+                    <td>Participated in various coding challenges and hackathons</td>
+                </tr>
+                <tr>
+                    <td>Successfully completed multiple online courses on web development and programming</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="interests">
+            <h2>Interests</h2>
+            <table>
+                
+                <tr>
+                    <td>Coding and Programming</td>
+                </tr>
+                <tr>
+                    <td>Drawing & Creative Arts</td>
+                </tr>
+                <tr>
+                    <td>Reading Technology Books</td>
+                </tr>
+                <tr>
+                    <td>Playing Sports</td>
+                </tr>
+            </table>
+        </section>
+    </div>
+
+    <script>
+        // Get the close button
+        var closeBtn = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on the close button, close the modal
+        closeBtn.onclick = function() {
+            window.history.back(); // This goes back to the previous page
+        }
+    </script>
+</body>
+</html>

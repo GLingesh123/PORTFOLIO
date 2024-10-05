@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Lingesh's Profile</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+        <h1>GOLLA LINGESH</h1>
+        <p>CSE Student at G. Pullaiah College of Engineering and Technology pursuing B.Tech</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <!-- Resume link -->
+            <li><a href="#" id="resumeLink">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+        <marquee><h2>Welcome to My Profile</h2></marquee>
+        <p>Hi, I'm Lingesh, a CSE student passionate about technology and coding.</p>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="img/img1.png" alt="Lingesh's Portrait" class="portrait">
+        <p>I'm a dedicated and passionate Computer Science student with a strong foundation in programming, problem-solving, and technology. I enjoy tackling complex challenges and continuously expanding my skill set.</p>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements">
+        <h2>Key Achievements</h2>
+        <ul>
+            <li>Secured 1st place in a national-level coding competition.</li>
+            <li>Completed an internship at [Company Name], working on [specific project or technology].</li>
+            <li>Developed a [type of project] that received [specific recognition or usage stats].</li>
+            <li>Contributed to open-source projects, including [project name or platform].</li>
+        </ul>
+    </section>
+
+    <!-- Skills Summary Section -->
+    <section id="skills-summary">
+        <h2>Skills at a Glance</h2>
+        <p>Proficient in: HTML, CSS, JavaScript, Python, Java, C++. Experienced in: Web Development, Data Structures, Algorithms, and Software Engineering.</p>
+        <button class="btn"><a href="skills.html" >View Full Skillset</a></button>
+    </section>
+
+    <!-- Project Highlights Section -->
+    <section id="projects">
+        <h2>Highlighted Projects</h2>
+        <div class="project-grid">
+            <div class="project">
+                <h3>Project 1: [Title]</h3>
+                <p>A brief description of your project, highlighting the technologies used and the problem it solves.</p>
+                <button class="btn"><a href="projects.html" >Learn More ⋙</a></button>
+            </div>
+            <div class="project">
+                <h3>Project 2: [Title]</h3>
+                <p>A brief description of your project, highlighting the technologies used and the problem it solves.</p>
+                <button class="btn"><a href="projects.html" >Learn More ⋙</a></button>
+            </div>
+            <div class="project">
+                <h3>Project 3: [Title]</h3>
+                <p>A brief description of your project, highlighting the technologies used and the problem it solves.</p>
+                <button class="btn"><a href="projects.html" >Learn More ⋙</a></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial/Quote Section -->
+    <section id="testimonials">
+        <h2>What Others Say</h2>
+        <blockquote>
+            "Lingesh is a highly skilled and motivated individual who consistently delivers high-quality work. His ability to quickly learn new technologies and apply them effectively is impressive." – [Name], [Position], [Company]
+        </blockquote>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Get in Touch</h2>
+        <p>If you're interested in working together or have any questions, feel free to contact me!</p>
+        <button class="btn"><a href="contact.html" >Contact me ⋙</a></button>
+    </section>
+
+    <!-- Resume Modal -->
+    <div id="resumeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <iframe src="resume.html" class="resume-iframe" title="Resume"></iframe>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Lingesh. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Modal -->
+    <div id="resumeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <iframe src="resume.html" class="resume-iframe" title="Resume"></iframe>
+        </div>
+    </div>
+
+    <!-- JavaScript for Modal -->
+    <script>
+        // Get the modal
+        var modal = document.getElementById('resumeModal');
+
+        // Get the link that opens the modal
+        var resumeLink = document.getElementById('resumeLink');
+
+        // Get the <span> element that closes the modal
+        var closeBtn = document.querySelector('.close');
+
+        // When the user clicks on the link, open the modal
+        resumeLink.onclick = function(event) {
+            event.preventDefault(); // Prevent default link behavior
+            modal.style.display = 'block';
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        closeBtn.onclick = function() {
+            modal.style.display = 'none';
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

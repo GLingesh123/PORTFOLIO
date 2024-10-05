@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Lingesh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#" id="resumeLink">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="about-me">
+        <img src="img/img1.png" alt="Lingesh's Portrait" class="portrait">
+        <h2>Lingesh - Aspiring Software Developer</h2>
+        <p>Hello! I'm Lingesh, a Computer Science and Engineering student at G. Pullaiah College of Engineering and Technology. I am deeply passionate about coding, technology, and continuous learning. My interests include software development and web development.</p>
+    </section>
+
+    <section class="details">
+        <h3>My Journey</h3>
+        <p>I started my journey in the world of technology with a fascination for how things work, leading me to pursue a degree in Computer Science. Over the years, I have developed a strong foundation in programming languages and software engineering principles. My projects reflect my dedication to learning and applying new technologies to solve real-world problems.</p>
+
+        <h3>What Drives Me?</h3>
+        <p>Curiosity and a desire to innovate are the forces that drive me. I am constantly seeking out new challenges that allow me to grow my skills and knowledge. I believe in the power of technology to make a positive impact, and I am committed to using my skills to contribute to meaningful projects.</p>
+    </section>
+
+    <section class="goals">
+        <h3>Goals and Aspirations</h3>
+        <p>My short-term goal is to gain practical experience in the software development industry through internships and collaborative projects. Long-term, I aim to become a full-stack developer and contribute to innovative software solutions that can enhance everyday life.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Lingesh. All rights reserved.</p>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/golla-lingesh-12950125a">LinkedIn</a>
+            
+        </div>
+    </footer>
+
+    <!-- Resume Modal -->
+    <div id="resumeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <iframe src="resume.html" class="resume-iframe" title="Resume"></iframe>
+        </div>
+    </div>
+
+    <!-- JavaScript for Modal -->
+    <script>
+        // Get the modal
+        var modal = document.getElementById('resumeModal');
+
+        // Get the link that opens the modal
+        var resumeLink = document.getElementById('resumeLink');
+
+        // Get the <span> element that closes the modal
+        var closeBtn = document.querySelector('.close');
+
+        // When the user clicks on the link, open the modal
+        resumeLink.onclick = function(event) {
+            event.preventDefault(); // Prevent default link behavior
+            modal.style.display = 'block';
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        closeBtn.onclick = function() {
+            modal.style.display = 'none';
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

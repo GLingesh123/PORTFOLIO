@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Lingesh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gallery</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#" id="resumeLink">Resume</a></li>
+			<li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="gallery-section">
+        <h2>My Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="img/gallery1.jpg" alt="Project 1"></div>
+            <div class="gallery-item"><img src="img/gallery2.jpg" alt="Project 2"></div>
+            <div class="gallery-item"><img src="img/gallery3.jpg" alt="Project 3"></div>
+            <!-- Add more gallery items as needed -->
+        </div>
+    </section>
+<!-- Resume Modal -->
+    <div id="resumeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <iframe src="resume.html" class="resume-iframe" title="Resume"></iframe>
+        </div>
+    </div>
+
+    <!-- JavaScript for Modal -->
+    <script>
+        // Get the modal
+        var modal = document.getElementById('resumeModal');
+
+        // Get the link that opens the modal
+        var resumeLink = document.getElementById('resumeLink');
+
+        // Get the <span> element that closes the modal
+        var closeBtn = document.querySelector('.close');
+
+        // When the user clicks on the link, open the modal
+        resumeLink.onclick = function(event) {
+            event.preventDefault(); // Prevent default link behavior
+            modal.style.display = 'block';
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        closeBtn.onclick = function() {
+            modal.style.display = 'none';
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

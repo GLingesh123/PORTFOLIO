@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Lingesh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Educational Journey</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#" id="resumeLink">Resume</a></li>
+			<li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>Academic Background</h2>
+        <ul class="timeline">
+            <li>
+                <h3>B.Tech in Computer Science and Engineering</h3>
+                <p><strong>Institution:</strong> G. Pullaiah College of Engineering and Technology</p>
+                <p><strong>Duration:</strong> 2022 - Present</p>
+                <p><strong>Details:</strong> Currently pursuing my undergraduate degree, specializing in Computer Science and Engineering. This program has equipped me with a solid foundation in coding, software development, and emerging technologies.</p>
+            </li>
+            <li>
+                <h3>Intermediate Education</h3>
+                <p><strong>Institution:</strong> Narayana Junior College</p>
+                <p><strong>Duration:</strong> 2020 - 2022</p>
+                <p><strong>Details:</strong> Focused on Mathematics, Physics, and Chemistry (MPC), laying the groundwork for my passion in engineering and technology. Achieved high academic scores while actively participating in various tech-related extracurricular activities.</p>
+            </li>
+            <li>
+                <h3>High School</h3>
+                <p><strong>Institution:</strong> Adarsha Vidya Mandir High School</p>
+                <p><strong>Duration:</strong> 2016 - 2020</p>
+                <p><strong>Details:</strong> Developed a strong interest in science and technology during my high school years. Participated in various science fairs and coding competitions that fueled my passion for computer science.</p>
+            </li>
+        </ul>
+    </section>
+	<!-- Resume Modal -->
+    <div id="resumeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <iframe src="resume.html" class="resume-iframe" title="Resume"></iframe>
+        </div>
+    </div>
+
+    <!-- JavaScript for Modal -->
+    <script>
+        // Get the modal
+        var modal = document.getElementById('resumeModal');
+
+        // Get the link that opens the modal
+        var resumeLink = document.getElementById('resumeLink');
+
+        // Get the <span> element that closes the modal
+        var closeBtn = document.querySelector('.close');
+
+        // When the user clicks on the link, open the modal
+        resumeLink.onclick = function(event) {
+            event.preventDefault(); // Prevent default link behavior
+            modal.style.display = 'block';
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        closeBtn.onclick = function() {
+            modal.style.display = 'none';
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

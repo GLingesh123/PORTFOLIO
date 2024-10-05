@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Lingesh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Contact</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#" id="resumeLink">Resume</a></li>
+			<li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>Get in Touch</h2>
+        <p>If you have any questions, feel free to reach out to me. I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+        <form action="mailto:Lingesh67890@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="social-media">
+            <h3>Connect with Me</h3>
+            <a href="https://www.linkedin.com/in/golla-lingesh-12950125a" target="_blank">LinkedIn</a>
+            <!-- Add other social media links if needed -->
+        </div>
+    </section>
+	<!-- Resume Modal -->
+    <div id="resumeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <iframe src="resume.html" class="resume-iframe" title="Resume"></iframe>
+        </div>
+    </div>
+
+    <!-- JavaScript for Modal -->
+    <script>
+        // Get the modal
+        var modal = document.getElementById('resumeModal');
+
+        // Get the link that opens the modal
+        var resumeLink = document.getElementById('resumeLink');
+
+        // Get the <span> element that closes the modal
+        var closeBtn = document.querySelector('.close');
+
+        // When the user clicks on the link, open the modal
+        resumeLink.onclick = function(event) {
+            event.preventDefault(); // Prevent default link behavior
+            modal.style.display = 'block';
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        closeBtn.onclick = function() {
+            modal.style.display = 'none';
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
